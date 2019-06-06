@@ -1,0 +1,86 @@
+#include "pch.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+
+использование пространства имен std; 
+
+struct BaseAuto
+{
+	строка Марк;
+	номер строки;
+	Строка Порт;
+	Int Вес;
+	int Cost;
+
+};
+
+int main ()
+{	
+	стоимость int;
+	setlocale (LC_ALL, "ru");	
+	string path = "Base.txt";
+	офстрим базы; // ofstream
+	ifstream ibase;
+
+	ibase.open (путь);
+	if (! ibase.is_open ())
+	{
+		cout << "Erorr # 2";
+	}
+	еще
+	{
+		char openBase;
+		while (ibase.get (openBase))
+		{	
+			cout << openBase;			
+		}
+
+
+	}
+	ibase.close ();
+
+
+
+	base.open (путь, ofstream :: приложение);
+
+	BaseAuto Auto;
+
+	if (! base.is_open ())
+	{
+		cout << "Erorr # 1" << endl;
+	}
+	еще
+	{	
+		cout << "\ nВведите Марку Машины:";
+		cin >> Авто.Марк;
+		база << "\ nMark Car:";
+		база << Авто.Марк;
+		cout << "Введите номер Машины:";
+		cin >> Auto.Number;
+		base << "\ nNumber Car:";
+		база << Auto.Number;
+		cout << "Введите место полученного груза:";
+		cin >> Auto.Port;
+		base << "\ nPort:";
+		база << Auto.Port;
+		cout << "Введите Стоимость Машины:";
+		cin >> Auto.Cost;
+		база << "\ nСтоимость автомобиля:";
+		база << Auto.Cost;
+		cout << "Введите вес Машины: (10 тонн максимум)";
+		cin >> Авто. Вес;
+		if (Auto.Weight >> 100)
+		{
+			while (Авто.Вес >> 100)
+			{
+				cout << "Eroor";
+				cin >> Авто. Вес;
+			}
+		}
+		база << "\ nВесная машина:";
+		база << Авто.Вес;
+
+	}
+	base.close ();
+}
